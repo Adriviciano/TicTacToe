@@ -1,0 +1,82 @@
+body{
+    background-color:rgb(9, 15, 49);
+}
+h1{
+    padding:0;
+    margin:0;
+    color:red;
+    font-size:5rem;
+    font-family:Calibri;
+}
+.tic{
+    display: inline-block;
+}
+.tac{
+    display: inline-block;
+    color: yellow;
+}
+.toe{
+    display: inline-block;
+}
+
+button{
+    display:inline-block;
+    padding:0.3em 1.2em;
+    margin:0 2em 0.1em 1em;
+    border:0.16em solid rgba(255,255,255,0);
+    border-radius:2em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-size: 1em;
+    font-weight:300;
+    color:#FFFFFF;
+    text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+    text-align:center;
+    transition: all 0.3s;
+}
+ button:hover{
+    border-color: rgba(255,255,255,1);
+    }
+@media all and (max-width:30em){
+    button{
+        display:block;
+        margin:0.2em auto;
+    }
+}
+
+.bouncy{
+    animation:bouncy 15s infinite linear;
+    position:relative;
+}
+@keyframes bouncy {
+    0%{top:0em}
+    42%{top:0em}
+    43%{top:-0.9em}
+    44%{top:0em}
+    45%{top:-0.4em}
+    46%{top:0em}
+    100%{top:0em;}
+}
+
+.tablero {
+    background-color: red;
+    position: absolute;
+    width:21.6em;
+    height: 21.6em;
+    margin: 1em 0.5em;
+    z-index: 1;
+    box-sizing: border-box;
+}
+.casilla{
+    display: inline-block;
+    box-sizing: border-box;
+    position: relative;
+    width: 7em;
+    height: 7em;
+    padding: 1em;
+    background-color: rgb(9, 15, 49);
+    z-index: 2;
+    background-image: none;
+}
+
