@@ -61,9 +61,9 @@ button{
 
 .tablero {
     background-color: red;
-    position: absolute;
-    width:21.6em;
-    height: 21.6em;
+    position: relative;
+    width:21.5em;
+    height: 21.5em;
     margin: 1em 0.5em;
     z-index: 1;
     box-sizing: border-box;
@@ -80,3 +80,7 @@ button{
     background-image: none;
 }
 
+p{
+    color: whitesmoke;
+    font-size: 2em;
+}
