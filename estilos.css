@@ -46,39 +46,60 @@ button{
 }
 
 .bouncy{
-    animation:bouncy 15s infinite linear;
+    animation:bouncy 10s infinite linear;
     position:relative;
 }
 @keyframes bouncy {
     0%{top:0em}
-    42%{top:0em}
+    41%{top:0em}
     43%{top:-0.9em}
-    44%{top:0em}
-    45%{top:-0.4em}
-    46%{top:0em}
+    45%{top:0em}
+    47%{top:-0.4em}
+    49%{top:0em}
     100%{top:0em;}
 }
 
 .tablero {
     background-color: red;
     position: relative;
-    width:21.5em;
-    height: 21.5em;
+    width:23.5em;
+    height: 23.5em;
     margin: 1em 0.5em;
     z-index: 1;
     box-sizing: border-box;
 }
 .casilla{
-    display: inline-block;
+    display: block;
     box-sizing: border-box;
-    position: relative;
-    width: 7em;
-    height: 7em;
-    padding: 1em;
+    position: absolute;
+    width: 7.5em;
+    height: 7.5em;
+    padding: 0;
+    margin: 0;
     background-color: rgb(9, 15, 49);
     z-index: 2;
     background-image: none;
 }
+.fila1{
+    margin-top: 0;
+}
+.fila2{
+    margin-top: 8em;
+}
+.fila3{
+    margin-top:16em;
+}
+.columna1{
+    margin-left: 0;
+}
+.columna2{
+    margin-left: 8em;
+}
+.columna3{
+    margin-left:16em;
+}
+
+
 
 p{
     color: whitesmoke;
